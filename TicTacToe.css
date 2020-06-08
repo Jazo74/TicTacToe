@@ -1,0 +1,84 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.main {
+    background-color: black;
+    display: grid;
+    grid-template-areas: "header"
+                         "playground"
+                         "footer";
+    grid-template-rows: 120px auto 100px;
+    grid-gap: 10px;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: wheat;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(55, 15, 121);
+    text-align: center;
+}
+
+.playground {
+    height: 905px;
+    padding: 100px;
+    grid-area: playground;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px);
+    background-color: rgb(49, 48, 48);
+    justify-content: center;
+    align-content: center;
+}
+.footer {
+    grid-area: footer;
+    background-color: darkslategray;
+}
+
+#restart-button {
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    }
+.cards {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+.logos {
+    padding-top: 20px;
+    height: 75%;
+    display: table-cell;
+    margin: 0 auto;
+    transition-duration: 1s;
+}
+
+.footer {
+    color: wheat;
+    text-align: center;
+}
